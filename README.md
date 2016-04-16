@@ -32,7 +32,5 @@ class { 'nodejs':
 ## Limitations
 
 Made just for Debian/Ubuntu and Redhat/CentOS, but it has not been tested in provider YUM. 
-=======
-# hepd-nodejs
-Puppet NodeJS module
+
 
