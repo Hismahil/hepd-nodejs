@@ -1,0 +1,14 @@
+{
+  "name": "hepd-nodejs",
+  "version": "0.0.1",
+  "author": "hepd",
+  "summary": "Module for install nodejs framework",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
