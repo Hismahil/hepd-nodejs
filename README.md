@@ -23,6 +23,35 @@ class { 'nodejs':
 	version	=> '0.12',
 }
 ```
+
+```puppet
+node default {
+	class { 'nodejs':
+		version	=> '0.12'
+	}
+
+	exec { 'npm-update':
+		command		=> 'npm install npm -g',
+		path		=> '/bin:/sbin:/usr/bin:/usr/sbin',
+		require		=> Class['nodejs']
+	}
+
+	exec { 'install-cordova':
+		command		=> 'npm install -g cordova',
+		path		=> '/bin:/sbin:/usr/bin:/usr/sbin',
+		timeout   	=> 0,
+		require		=> Exec['npm-update']
+	}
+
+	exec { 'install-ionic':
+		command		=> 'npm install -g ionic',
+		path		=> '/bin:/sbin:/usr/bin:/usr/sbin',
+		timeout   	=> 0,
+		require		=> Exec['install-cordova']
+	}
+}
+```
+
 ## Reference
 
 * `nodejs`: install one of the following versions (0.10, 0.12, 4.x and 5.x)

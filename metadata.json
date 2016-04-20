@@ -4,9 +4,9 @@
   "author": "hepd",
   "summary": "Module for install nodejs framework",
   "license": "Apache 2.0",
-  "source": "",
-  "project_page": null,
-  "issues_url": null,
+  "source": "https://github.com/Hismahil/hepd-nodejs.git",
+  "project_page": "https://github.com/Hismahil/hepd-nodejs.git",
+  "issues_url": "https://github.com/Hismahil/hepd-nodejs.git",
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
   ]
